@@ -1,0 +1,7 @@
+id: "yuanjing/nvm-auto"
+name: "NVM 自动版本切换"
+description: "自动化配置 Node 版本：检测项目所需版本，优先使用同大版本已安装的最高小版本，缺失则安装并生成 .nvmrc。每次执行自动检查并安装 shell hook（zsh/bash），之后 cd 进项目自动切换版本。"
+version: "1.0.0"
+scope:
+  file_patterns: ["package.json", ".nvmrc", ".node-version"]
+  tech_stack: ["Node.js", "nvm"]

@@ -1,0 +1,9 @@
+version: "1.0.0"
+name: "团队技能包"
+skills:
+  - id: "yuanjing/nvm-auto"
+    name: "NVM 自动版本切换"
+    path: "skills/nvm-auto"
+  - id: "yuanjing/vercel-react-best-practices"
+    name: "Vercel React Best Practices"
+    path: "skills/vercel-react-best-practices"

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git reset --soft HEAD~2)",
+      "Bash(git commit -m \"$\\(cat <<'EOF'\ndocs: 添加 README.md 文件\n\n- 添加初始 README 文件介绍技能集合仓库\n- 优化表格格式和换行\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git reflog expire --expire=now --all && git gc --prune=now --aggressive)",
+      "Bash(git update-ref -d refs/heads/main 2>/dev/null; git branch -D main 2>/dev/null || true)",
+      "Bash(git checkout main && git log --oneline --all --graph -10)",
+      "Bash(git replace --graft 43edfee ea6b2b6 && git gc --prune=now)",
+      "Bash(git fsck --unreachable)",
+      "Bash(git filter-repo --prune-empty always 2>/dev/null || git filter-branch --prune-empty always HEAD 2>/dev/null || echo \"filter tools not available\")",
+      "Bash(git reflog expire --expire=now --all && git gc --prune=now --aggressive && git log --oneline --all --graph -10)",
+      "Bash(git show-ref | grep 7348b73)",
+      "Bash(git push --force origin main)"
+    ]
+  }
+}
